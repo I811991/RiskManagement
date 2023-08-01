@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+    "codes": [
+        {
+            "type": "Assignment",
+            "result": "results",
+            "expression": {
+                "syntax": "context.results",
+                "dependencies": [
+                    "Variable"
+                ]
+            }
+        }
+    ],
+    "configuration": {
+        "entity": "riskmanagement_I811991Service.Risks",
+        "phase": "after",
+        "events": [
+            "READ"
+        ]
+    },
+    "hash": "8c2e0c4a98db3fdb8393d41924f9663a1274f962"
+}

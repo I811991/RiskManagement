@@ -1,0 +1,5 @@
+{
+  "ProjectOverviewURL": "https://hackxperience-team-1.launchpad.cfapps.eu10.hana.ondemand.com/lcapriskmanagement_I811991.riskmanagement_I811991Launchpad-1.0.0",
+  "DeployedUTCTime": "2023-08-01T01:21:05.983Z",
+  "ApplicationLogURL": "https://logs.cf.eu10-004.hana.ondemand.com/app/dashboards#/view/Overview?_g=(filters:!((query:(match_phrase:(component_name:riskmanagement_I811991-srv)))))"
+}
