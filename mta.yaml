@@ -9,10 +9,10 @@ build-parameters:
   before-all:
     - builder: custom
       commands:
-        - rm -rf build/ui-deployer
-        - mkdir -p build/ui-deployer
         - rm -rf build/dist
         - mkdir -p build/dist
+        - rm -rf build/ui-deployer
+        - mkdir -p build/ui-deployer
     - builder: custom
       commands:
         - npm install --production
@@ -114,6 +114,17 @@ modules:
               ServiceInstanceName: riskmanagement_I811991-html5-apps-repo-host
               ServiceKeyName: riskmanagement_I811991-html5-apps-repo-host-key
               sap.cloud.service: lcap.riskmanagement_I811991
+            - Authentication: OAuth2UserTokenExchange
+              Name: riskmanagement_I811991-riskmanagement_I811991Service
+              TokenServiceInstanceName: riskmanagement_I811991-uaa
+              TokenServiceKeyName: riskmanagement_I811991-uaa-key
+              URL: ~{srv-api/srv-url}/service/riskmanagement_I811991
+              sap.cloud.service: lcap.riskmanagement_I811991
+              sap.applicationdevelopment.actions.enabled: false
+              sap.build.usage: CAP
+              HTML5.DynamicDestination: false
+              WebIDEEnabled: false
+              AppgyverEnabled: false
     build-parameters:
       no-source: true
     requires:
@@ -176,6 +187,9 @@ resources:
       service-name: riskmanagement_I811991-uaa
       path: xs-security.json
       config:
+        oauth2-configuration:
+          redirect-uris:
+            - https://*.${default-domain}/login/*
         xsappname: riskmanagement_I811991-${space}
         role-collections:
           - description: Risk Viewer

@@ -12,10 +12,10 @@ stages:
     karmaExecuteTests: false
   Acceptance:
     cloudFoundryDeploy: true
-    cfApiEndpoint: "https://api.cf.eu10-004.hana.ondemand.com/"
+    cfApiEndpoint: "https://api.cf.eu10-004.hana.ondemand.com"
     cfOrg: "hackxperience-team-1"
     cfSpace: "HackXperience"
-    cfCredentialsId: "i811991-cf"
+    cfCredentialsId: "i811991-cf2"
     uiVeri5ExecuteTests: false
   Compliance:
     sonarExecuteScan: false
