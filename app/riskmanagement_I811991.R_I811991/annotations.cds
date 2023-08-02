@@ -4,22 +4,22 @@ annotate service.Risks with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'title',
+            Label : 'Title',
             Value : title,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'prio',
+            Label : 'Priority',
             Value : prio,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'description',
+            Label : 'Description',
             Value : description,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'impact',
+            Label : 'Impact',
             Value : impact,
             Criticality : criticality,
             CriticalityRepresentation : #WithIcon,
@@ -27,7 +27,7 @@ annotate service.Risks with @(
         {
             $Type : 'UI.DataField',
             Value : supplier_BusinessPartner,
-            Label : 'supplier_BusinessPartner',
+            Label : 'Supplier',
         },
     ]
 );
@@ -37,43 +37,43 @@ annotate service.Risks with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'title',
+                Label : 'Title',
                 Value : title,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'prio',
+                Label : 'Priority',
                 Value : prio,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'description',
+                Label : 'Description',
                 Value : description,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'impact',
+                Label : 'Impact',
                 Value : impact,
             },
             {
                 $Type : 'UI.DataField',
                 Value : miti_ID,
-                Label : 'miti_ID',
+                Label : 'Mitigation ID',
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'supplier_BusinessPartner',
+                Label : 'Supplier',
                 Value : supplier_BusinessPartner,
             },
             {
                 $Type : 'UI.DataField',
                 Value : supplier.BusinessPartnerFullName,
-                Label : 'BusinessPartnerFullName',
+                Label : 'Supplier Full Name',
             },
             {
                 $Type : 'UI.DataField',
                 Value : supplier.BusinessPartnerIsBlocked,
-                Label : 'BusinessPartnerIsBlocked',
+                Label : 'Supplier Is Blocked',
             },
         ],
     },
